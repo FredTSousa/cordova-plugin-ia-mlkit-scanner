@@ -12,7 +12,8 @@ repositories {
     }
 }
 dependencies {
-    runtimeOnly "com.google.mlkit:barcode-scanning:17.0.2"
+    implementation 'com.google.mlkit:barcode-scanning:16.1.2'
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
 }
 ext.postBuildExtras = {
     android {
